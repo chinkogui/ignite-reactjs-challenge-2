@@ -1,0 +1,25 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-typescript",
+    ["@babel/preset-react", {
+      "runtime": "automatic"
+    }]
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        ["module-resolver", {
+          "cwd": "babelrc",
+          "root": ["./"],
+          "alias": {
+            "components": "./src/components",
+            "models": "./src/models",
+            "services": "./src/services",
+            "styles": "./src/styles"
+          }
+        }]
+      ]
+    }
+  }
+}

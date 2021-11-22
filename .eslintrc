@@ -1,0 +1,21 @@
+{
+    "parser": "babel-eslint",
+    "env": {
+        "browser": true
+    },
+    "plugins": [
+        "import"
+    ],
+    "extends": [
+        "plugin:react-native/all"
+    ],
+    "rules": {},
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "paths": ["src"]
+            },
+            "babel-module": {}
+        }
+    }
+}
